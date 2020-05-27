@@ -41,16 +41,7 @@ handler = logging.FileHandler(filename=fn, encoding='utf-8', mode='w')
 handler.setFormatter(logging.Formatter('%(asctime)s:%(levelname)s:%(name)s: %(message)s'))
 logger.addHandler(handler)
 
-#token data for bot
-token='NzE0OTI3NTAxOTk4MjkzMDcz.Xs126A.rhCko-qdtMmo5Sp9PQgzVl2g81Q'
 
-#guild_id id
-guild_id = 289587222011707412
-
-#my/creator identification
-my_id = "289311066134020098"
-my_name = "Smika"
-my_discriminator = "2013"
 
 #create the client for the bot
 client = discord.Client()
