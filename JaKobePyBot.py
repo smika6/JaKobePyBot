@@ -14,7 +14,7 @@ from discord.utils import get
 import datetime
 import logging
 import os
-import youtube_dlasdfbhjlasd asdhjkfas hjlf
+import youtube_dl
 #put log data to console
 #logging.basicConfig(level=logging.INFO)
 
