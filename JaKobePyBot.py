@@ -41,6 +41,7 @@ handler = logging.FileHandler(filename=fn, encoding='utf-8', mode='w')
 handler.setFormatter(logging.Formatter('%(asctime)s:%(levelname)s:%(name)s: %(message)s'))
 logger.addHandler(handler)
 
+token = ''
 
 
 #create the client for the bot
@@ -71,19 +72,6 @@ async def on_message(message):
     #ignore our messages
     if message.author == client.user:
         return
-    
-    #COMMANDS FOR ME/CREATOR ONLY
-    if str(message.author.id) == my_id:
-        if str(message.author.name) == my_name:
-            if str(message.author.discriminator) == my_discriminator:
-
-                #if I want to print to console
-                if message.content.startswith(">print"):
-                    print(message.content.split(' ', 1)[1])
-                
-                #if I want to close the bot.
-                if message.content.startswith(">end"):
-                    await client.logout()
     
     #COMMANDS FOR EVERYONE
 
