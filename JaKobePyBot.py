@@ -6,8 +6,7 @@ Created on Tue May 26 15:10:59 2020
 @purpose:
     This is a discord bot for handling input withing 'guilds'
 """
-sdfgsdfgsdfgsdfg
-#import discord
+
 import discord
 from discord.ext import commands
 from discord.utils import get
